@@ -11,6 +11,9 @@ const rulesth = require('./command/rulesth');
 const announcement = require('./command/announc');
 const poll = require('./command/poll');
 const reaction = require('./command/reaction');
+const info = require('./command/info')
+
+
 
 
 client.on('ready', () => {
@@ -28,5 +31,6 @@ client.on('ready', () => {
     announcement(client)
     poll(client)
     reaction(client)
+    info(client)
 });
 client.login(config.token);

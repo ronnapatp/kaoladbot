@@ -28,7 +28,7 @@ module.exports = (client) => {
             .addFields(
                 { name: '!kick <tag>', value: 'To kick member', inline: true},
                 { name: '!ban <tag>', value: '`To ban member`', inline: true },
-                //{ name: '!warn <tag> <reson>', value: '`Warn member with reson`', inline: true },
+                { name: '!clear <amount>', value: 'Delete message', inline: true },
             )
             .setFooter('Kaolad help area');
         
@@ -48,6 +48,10 @@ module.exports = (client) => {
                 { name: '!rulesth', value: 'Rules in Thai', inline: true },
                 { name: '!announcement', value: 'Show announc room', inline: true },
                 { name: '!inviteme', value: 'Show invite link', inline: true },
+                { name: '!severinfo', value: 'Show sver info', inline: true },
+                { name: '!poll', value: 'Create poll', inline: true },
+                { name: '!help', value: 'Show this command', inline: true },
+                { name: '!<emoji name>', value: 'Bot will react emoji to message', inline: true },
             )
             .setFooter('Kaolad help area');
         
