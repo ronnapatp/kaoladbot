@@ -1,7 +1,7 @@
 # kaolad bot V.2
 ### Select what you want to see
-- [Invite link]()
-- [Set up this bot in you computer]()
+- [Invite link](https://github.com/ronnapatp/kaoladbot#invite-link)
+- [Set up this bot in you computer](https://github.com/ronnapatp/kaoladbot#set-up-this-bot-in-you-computer)
 # Invite link
 [Click here to invite bot](https://discord.com/api/oauth2/authorize?client_id=867031115373215795&permissions=0&scope=bot)
 # Set up this bot in you computer
