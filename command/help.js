@@ -52,6 +52,8 @@ module.exports = (client) => {
                 { name: '!poll', value: 'Create poll', inline: true },
                 { name: '!help', value: 'Show this command', inline: true },
                 { name: '!<emoji name>', value: 'Bot will react emoji to message', inline: true },
+                { name: '!leaderof<country name>', value: 'Use `!countryleader` for more info', inline: true },
+
             )
             .setFooter('Kaolad help area');
         
@@ -64,7 +66,24 @@ module.exports = (client) => {
             const exampleEmbed = new MessageEmbed()
             .setColor('#F1C40F')
             .setTitle('Kaolad music help area')
-            .setDescription('Use rymth or hydra')
+            .setDescription('Use <@872691687263207424>')
+            .setFooter('Kaolad help area');
+        
+            msg.channel.send(exampleEmbed);
+            
+    }
+    })
+    client.on("message" , msg => {
+        if (msg.content === '!countryleader'){
+            const exampleEmbed = new MessageEmbed()
+            .setColor('#F1C40F')
+            .setTitle('Kaolad country leader commands help area')
+        
+            .addFields(
+                { name: '!leaderofthailand', value: 'Thailand', inline: true},
+                { name: '!leaderofuk', value: 'United kingdom', inline: true },
+                { name: '!leaderofus', value: 'United States', inline: true },
+            )
             .setFooter('Kaolad help area');
         
             msg.channel.send(exampleEmbed);

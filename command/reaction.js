@@ -160,4 +160,28 @@ module.exports = (client) => {
           msg.react('🍴');
       }
     })
+    client.on("message" , msg => {
+        if (msg.content === '!smile'){
+            msg.channel.send("Bot will add smile emoji to your message!")
+            msg.react('😀');
+    }
+    })
+    client.on("message" , msg => {
+        if (msg.content === '!smile'){
+            msg.channel.send("Bot will add smile emoji to your message!")
+            msg.react('😀');
+    }
+    })
+    client.on("message" , msg => {
+        if (msg.content === '!smile'){
+            msg.channel.send("Bot will add smile emoji to your message!")
+            msg.react('😀');
+    }
+    })
+    client.on("message" , msg => {
+        if (msg.content === '!smile'){
+            msg.channel.send("Bot will add smile emoji to your message!")
+            msg.react('😀');
+    }
+    })
 }

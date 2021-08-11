@@ -71,5 +71,10 @@ module.exports = (client) => {
             msg.channel.send("Test today. **DO NOT CHEAT!** Goodluck😄");
       }
       })
+      client.on("message" , msg => {
+        if (msg.content === '$school'){
+            msg.delete()
+            msg.channel.send("@here Today at 7.40 AM. We have a school event. **Don't forget to join!** https://chula.zoom.us/j/4382025645?pwd=NklwR1dEN2VZWjlCalNHcEp4bW4rQT09😄");      }
+      })
 }
 //msg.delete()

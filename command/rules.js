@@ -22,8 +22,23 @@ module.exports = (client) => {
             .addFields({ name: "Rules number 7",
             value: "Do not racist. I don't care if you are god but in this sever everyone are same!"})
             .addFields({ name: "Rules number 8",
+            value: "Do not use bad word!"})
+            .addFields({ name: "Rules number 9",
             value: "Do not tag @EVERYONE please use @HERE!"})
             .setFooter('The penalty will depend on the parliament leader.');
+        
+            msg.channel.send(exampleEmbed);
+            
+    }
+    })
+    client.on("message" , msg => {
+        if (msg.content === '!userule'){
+            msg.delete()
+            const exampleEmbed = new MessageEmbed()
+            .setColor('#F1C40F')
+            .setTitle('SEVER RULES')
+            .setDescription('Rule number 6 come back **CHANGE YOUR NAME BACK**')
+            .setFooter('Hi i bored comunnity');
         
             msg.channel.send(exampleEmbed);
             
