@@ -20,7 +20,7 @@
         msg.includes('ป้อม') ||
         msg.includes('prayuth') ||
         msg.includes('prayut') ||
-        msg.includes('tu') ||
+        msg.includes('ลุงตู่') ||
         msg.includes('prawit') ||
         msg.includes('นะจ๊ะ') 
       ) {

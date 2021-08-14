@@ -1,7 +1,6 @@
-const { badwords } = require("./data.json") 
 module.exports = (client) => {
 client.on('message', async message => {
-  console.log(message.content);
+
 
   // if message includes discorcl / .ru / knife : Add role "Muted"
   const msg = message.content.toLowerCase();
@@ -21,7 +20,8 @@ client.on('message', async message => {
     msg.includes('cock') ||
     msg.includes('dick') ||
     msg.includes('pussy') ||
-    msg.includes('shit')
+    msg.includes('shit') ||
+    msg.includes('vagina')
 
   ) {
     // Delete message
