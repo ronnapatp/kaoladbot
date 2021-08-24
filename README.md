@@ -13,4 +13,4 @@ npm install discord.js
 ```
 node .
 ```
-3. Finished
+3. Finished Please Enjoy
