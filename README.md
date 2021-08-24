@@ -1,4 +1,4 @@
-# kaolad bot V.2
+# kaolad bot V.2.1
 ### Select what you want to see
 - [Invite link](https://github.com/ronnapatp/kaoladbot#invite-link)
 - [Set up this bot in you computer](https://github.com/ronnapatp/kaoladbot#set-up-this-bot-in-you-computer)
