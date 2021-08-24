@@ -8,7 +8,8 @@ module.exports = (client) => {
 
     if (
       member.hasPermission('ADMINISTRATOR') ||
-      member.hasPermission('MANAGE_ROLES')
+      member.hasPermission('MANAGE_ROLES') ||
+      member.hasPermission('MUTE_MEMBERS')
     ) {
       const target = mentions.users.first()
       if (target) {
