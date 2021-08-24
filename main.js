@@ -27,7 +27,9 @@ const afk = require('./commands/afk')
 client.on('ready', async () => {
     console.log('The client is ready!')
     client.user.setActivity("!help", { type: "PLAYING"});
-    //client.channels.cache.get('867654057912958976').send('📢<@867031115373215795> is now online to see command use **!help**✨');
+    client.channels.cache.get('841948325406048267').send('***TRAIN APPROUCHING ***');
+    client.channels.cache.get('841948325406048267').send('PLATFORM 3 KAOLAD LINE TRAIN TO SLEEPING');
+    client.channels.cache.get('841948325406048267').send('THE NEXT STATION IS BORNING CLASS');
     command(client)
     help(client)
     kick(client)
