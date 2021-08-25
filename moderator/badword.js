@@ -21,7 +21,8 @@ client.on('message', async message => {
     msg.includes('dick') ||
     msg.includes('pussy') ||
     msg.includes('shit') ||
-    msg.includes('vagina')
+    msg.includes('vagina') ||
+    msg.includes('HEE')
 
   ) {
     // Delete message
