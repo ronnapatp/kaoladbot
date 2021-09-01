@@ -1,0 +1,5 @@
+# Change file name to config.json
+{
+    "prefix": "!",
+    "token": "Token"
+}
