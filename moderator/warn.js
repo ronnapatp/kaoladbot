@@ -12,7 +12,9 @@ module.exports = (client) => {
           const target = mentions.users.first()
           if (target) {
             const targetMember = message.guild.members.cache.get(target.id)
-            message.channel.send(`${tag.member} has been warn`)
+            targetMember.send(`⚠️ ${tag}You have been warn by ${message.author.username} ⚠️`);
+            targetMember.send(`https://tenor.com/view/warning-lights-cops-emergency-gif-6098038`);
+            message.channel.send(`${tag} That user has been warn in dm.`)
           } else {
             message.channel.send(`Please tag someone to warn.`)
           }

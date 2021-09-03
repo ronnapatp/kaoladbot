@@ -13,6 +13,7 @@ module.exports = (client) => {
           const target = mentions.users.first()
           if (target) {
             const targetMember = message.guild.members.cache.get(target.id)
+            targetMember.send(`⚠️ ${tag}You have been ban by ${message.author.username} ⚠️`);
             targetMember.ban()
             message.channel.send(`${tag} That user has ban, BYE!`)
           } else {

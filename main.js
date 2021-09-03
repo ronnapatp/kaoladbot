@@ -23,13 +23,11 @@ const mute = require('./moderator/mute')
 const unmute = require('./moderator/unmute')
 const poll2 = require('./moderator/poll')
 const afk = require('./commands/afk')
+const warn = require('./moderator/warn')
 
 client.on('ready', async () => {
     console.log('The client is ready!')
     client.user.setActivity("!help", { type: "PLAYING"});
-    client.channels.cache.get('841948325406048267').send('***TRAIN APPROUCHING ***');
-    client.channels.cache.get('841948325406048267').send('PLATFORM 3 KAOLAD LINE TRAIN TO SLEEPING');
-    client.channels.cache.get('841948325406048267').send('THE NEXT STATION IS BORNING CLASS');
     command(client)
     help(client)
     kick(client)
@@ -52,6 +50,7 @@ client.on('ready', async () => {
     unmute(client)
     poll2(client)
     afk(client)
+    warn(client)
   })
   
 

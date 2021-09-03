@@ -13,6 +13,7 @@ module.exports = (client) => {
       const target = mentions.users.first()
       if (target) {
         const targetMember = message.guild.members.cache.get(target.id)
+        targetMember.send(`⚠️ ${tag}You have been kick by ${message.author.username} ⚠️`);
         targetMember.kick()
         message.channel.send(`${tag} That user has kicked, BYE!`)
       } else {

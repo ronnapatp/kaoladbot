@@ -27,6 +27,7 @@ client.on('message', async message => {
   ) {
     // Delete message
     await message.delete();
+    await message.author.send('STOP USE BADWORD ALSO MUTE ROLE WILL AUTO DELETE');
     console.log('Muted role added to', message.author.username);
     let mutedRole = message.guild.roles.cache.find(
       role => role.name === 'Muted'
