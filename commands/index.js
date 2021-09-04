@@ -59,4 +59,9 @@ module.exports = (client) => {
             msg.channel.send("ไม่ใช่มรณะ")
     }
     })
+    client.on("message" , msg => {
+        if (msg.content === `<@!867031115373215795>`){
+            msg.channel.send(`Oh for help use !help. This bot is create by ronnapatp and bhira`)
+    }
+    })
 }
