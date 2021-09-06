@@ -34,7 +34,10 @@
 }
 ```
 7. Now back on discord developer and click on OAuthO2 (www.discord.com/developers/applications/Your-application-id/oauth2)
+
 ![image](https://i.imgur.com/JUgSmP0.png)        
+
+
 8. Look at SCOPES section and click `bot`
 ![image](https://i.imgur.com/fpmmSOR.png)
 9. You will see BOT PERMISSIONS section you can click to choose ADMINISTER
