@@ -21,7 +21,9 @@
 
 5. Click `Copy` to copy token and click `Regenerate` to regenerate token
 **❌DO NOT GIVE THIS TOKEN TO ANYONE!❌**
+
 ![image](https://i.imgur.com/MBM31gJ.png)
+
 6. Open `config.json` file and paste on token also insert your prefix for example `!` `$`
 ```diff
 {
