@@ -15,6 +15,8 @@ module.exports = (client) => {
             targetMember.send(`⚠️You have been warn by ${message.author.username} ⚠️`);
             targetMember.send(`https://tenor.com/view/warning-lights-cops-emergency-gif-6098038`);
             message.channel.send(`${tag} That user has been warn in dm.`)
+            client.channels.cache.get('853526088473640971').send(`${message.author.username} Just warn ${target.username}`)
+
           } else {
             message.channel.send(`Please tag someone to warn.`)
           }

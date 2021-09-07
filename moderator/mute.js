@@ -1,10 +1,11 @@
 const command = require('./command') 
-
+const { MessageEmbed } = require('discord.js');
 module.exports = (client) => {
   command(client, 'mute', (message) => {
     const { member, mentions } = message
 
     const tag = `<@${member.id}>`
+    const report = client.channels.cache.get('853526088473640971')
 
     if (
       member.hasPermission('ADMINISTRATOR') ||
@@ -14,6 +15,17 @@ module.exports = (client) => {
       const target = mentions.users.first()
       if (target) {
         const targetMember = message.guild.members.cache.get(target.id)
+        const exampleEmbed = new MessageEmbed()
+        .setColor('#F1C40F')
+        .setTitle('MUTE REPORT')
+        
+        .addFields(
+            { name: 'Mute by', value: `${message.author.username}`, inline: true},
+            { name: 'Mute', value: `${target.username}`, inline: true},
+            { name: 'Moderator', value: `<@!867031115373215795>`, inline: true },
+        )
+        .setFooter('KAOLADBOT');
+        report.send(exampleEmbed);
         console.log('Mute', message.author.username);
     let mutedRole = message.guild.roles.cache.find(
       role => role.name === 'Muted'
