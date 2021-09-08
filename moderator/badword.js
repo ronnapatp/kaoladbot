@@ -20,7 +20,6 @@ client.on('message', async message => {
     msg.includes('fucker') ||
     msg.includes('fuck') ||
     msg.includes('bitch') ||
-    msg.includes('cock') ||
     msg.includes('dick') ||
     msg.includes('pussy') ||
     msg.includes('shit') ||
