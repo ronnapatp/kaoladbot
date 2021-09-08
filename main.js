@@ -44,14 +44,12 @@ client.on('ready', async () => {
     political(client)  
     donate(client)
     badw(client)
-    //joke(client)
     pword(client)
     mute(client)
     unmute(client)
     poll2(client)
     afk(client)
     warn(client)
-  //  nitro(client)
   })
   
 
