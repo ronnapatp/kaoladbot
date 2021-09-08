@@ -24,7 +24,6 @@ const unmute = require('./moderator/unmute')
 const poll2 = require('./moderator/poll')
 const afk = require('./commands/afk')
 const warn = require('./moderator/warn')
-//const nitro = require('./moderator/nitro')
 
 client.on('ready', async () => {
     console.log('The client is ready!')
