@@ -3,9 +3,9 @@ title: Introduction
 layout: ../../layouts/MainLayout.astro
 ---
 
-**Welcome to Astro!**
+**Welcome to kaolad bot docs**
 
-This is the `docs` starter template. It contains all of the features that you need to build a Markdown-powered documentation site, including:
+This is the `docs` of kaolad bot
 
 - ✅ **Full Markdown support**
 - ✅ **Responsive mobile-friendly design**
