@@ -54,7 +54,7 @@
         setTimeout(() => {
           message.member.roles.remove(mutedRole);
           message.member.roles.add(defaultRole);
-        }, 10 * 1000);
+        }, 60 * 1000);
       }
     });
     }

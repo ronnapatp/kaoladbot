@@ -17,13 +17,19 @@ const welcome = require('./moderator/welcome')
 const political = require('./commands/political')
 const donate = require('./commands/donate')
 const badw = require('./moderator/badword')
-//const joke = require('./command/joke')
+const royalwarn = require('./moderator/royalwarn')
 const pword = require('./moderator/politicalword')
 const mute = require('./moderator/mute')
 const unmute = require('./moderator/unmute')
 const poll2 = require('./moderator/poll')
 const afk = require('./commands/afk')
 const warn = require('./moderator/warn')
+
+var http = require('http');  
+http.createServer(function (req, res) {   
+  res.write("I'm alive");   
+  res.end(); 
+}).listen(8080);
 
 client.on('ready', async () => {
     console.log('The client is ready!')
@@ -49,6 +55,7 @@ client.on('ready', async () => {
     unmute(client)
     poll2(client)
     afk(client)
+    royalwarn(client)
     warn(client)
   })
   

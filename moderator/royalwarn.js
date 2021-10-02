@@ -1,4 +1,4 @@
-
+// This include King Stuff
 module.exports = (client) => {
 client.on('message', async message => {
 
@@ -9,36 +9,23 @@ client.on('message', async message => {
   const { MessageEmbed } = require('discord.js');
 
   if (
-    msg.includes('หี') ||
-    msg.includes('ควย') ||
-    msg.includes('เหี้ย') ||
-    msg.includes('สัส') ||
-    msg.includes('หน้าหี') ||
-    msg.includes('ไอสัส') ||
-    msg.includes('ไอเหี้ย') ||
-    msg.includes('เสือก') ||
-    msg.includes('fucker') ||
-    msg.includes('fuck') ||
-    msg.includes('bitch') ||
-    msg.includes('dick') ||
-    msg.includes('pussy') ||
-    msg.includes('vagina') ||
-    msg.includes('HEE')
-
+    msg.includes('ไอ้ทรพี') ||
+    msg.includes('youtu.be/N0JGZLLYvHg') ||
+    msg.includes('www.youtube.com/watch?v=N0JGZLLYvHg')
   ) {
     const exampleEmbed = new MessageEmbed()
     .setColor('#F1C40F')
-    .setTitle('BADWORD DETECT')
+    .setTitle('Inappropriate Content DETECTED')
     
     .addFields(
         { name: 'User', value: `${message.author.username}`, inline: true},
-        { name: 'Moderator', value: `<@!867031115373215795>`, inline: true },
+        { name: 'Moderator', value: `<@683471861459583072>`, inline: true },
     )
     .setFooter('KAOLADBOT');
     // Delete message
     await message.delete();
     report.send(exampleEmbed);
-    await message.author.send('STOP USE BADWORD ALSO MUTE ROLE WILL AUTO DELETE');
+    await message.author.send('Please dont use Inappropriate Word');
     console.log('Muted role added to', message.author.username);
     let mutedRole = message.guild.roles.cache.find(
       role => role.name === 'Muted'
@@ -50,7 +37,7 @@ client.on('message', async message => {
     message.member.roles.add(mutedRole);
     message.member.roles.remove(defaultRole);
 
-    message.reply('You are muted!(Mute role will be delete from you soon) because you use bad word');
+    message.reply('You are muted!(Mute role will be delete from you in 60 Second) because you use Inappropriate word');
 
     setTimeout(() => {
       message.member.roles.remove(mutedRole);

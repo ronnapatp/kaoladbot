@@ -29,9 +29,6 @@ module.exports = (client) => {
                 { name: '!kick <tag>', value: 'To kick member', inline: true},
                 { name: '!ban <tag>', value: '`To ban member`', inline: true },
                 { name: '!clear <amount>', value: 'Delete message', inline: true },
-                { name: '!mute <tag>', value: '`To mute member`', inline: true },
-                { name: '!unmute <tag>', value: '`To unmute member`', inline: true },
-                { name: '!warn <tag>', value: '`To warn member`', inline: true },
             )
             .setFooter('Kaolad help area');
         
