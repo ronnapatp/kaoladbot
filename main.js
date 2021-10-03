@@ -24,6 +24,7 @@ const unmute = require('./moderator/unmute')
 const poll2 = require('./moderator/poll')
 const afk = require('./commands/afk')
 const warn = require('./moderator/warn')
+const joke = require('./commands/random')
 
 var http = require('http');  
 http.createServer(function (req, res) {   
@@ -57,6 +58,7 @@ client.on('ready', async () => {
     afk(client)
     royalwarn(client)
     warn(client)
+    joke(client)
   })
   
 
