@@ -27,7 +27,6 @@ module.exports = (client) => {
         targetMember.send(`⚠️ ${tag}You have been kick by ${message.author.username} ⚠️`);
         targetMember.kick()
         report.send(exampleEmbed);
-        client.channels.cache.get('853526088473640971').send(`${message.author.username} kick ${target.username}`)
         message.channel.send(`${tag} That user has kicked, BYE!`)
       } else {
         message.channel.send(`Please tag someone to kick.`)
