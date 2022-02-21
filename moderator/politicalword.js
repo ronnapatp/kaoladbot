@@ -6,7 +6,7 @@
 
       // if message includes discorcl / .ru / knife : Add role "Muted"
       const msg = message.content.toLowerCase();
-      const report = client.channels.cache.get('853526088473640971')
+      const report = client.channels.cache.get('937602764341661727')
   const { MessageEmbed } = require('discord.js');
       if (
         msg.includes('ประยุทธ์') ||

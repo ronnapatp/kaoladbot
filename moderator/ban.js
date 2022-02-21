@@ -3,7 +3,7 @@ const { MessageEmbed } = require('discord.js');
 module.exports = (client) => {
     command(client, 'ban', (message) => {
         const { member, mentions } = message
-        const report = client.channels.cache.get('853526088473640971')
+        const report = client.channels.cache.get('937602764341661727')
     
         const tag = `<@${member.id}>`
     
@@ -28,7 +28,7 @@ module.exports = (client) => {
             targetMember.ban()
             report.send(exampleEmbed);
 
-            client.channels.cache.get('853526088473640971').send(`${message.author.username} ban ${target.username}`)
+            client.channels.cache.get('937602764341661727').send(`${message.author.username} ban ${target.username}`)
             message.channel.send(`${tag} That user has ban, BYE!`)
           } else {
             message.channel.send(`Please tag someone to ban.`)

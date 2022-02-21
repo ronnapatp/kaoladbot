@@ -3,7 +3,7 @@ const { MessageEmbed } = require('discord.js');
 module.exports = (client) => {
   command(client, 'kick', (message) => {
     const { member, mentions } = message
-    const report = client.channels.cache.get('853526088473640971')
+    const report = client.channels.cache.get('937602764341661727')
 
     const tag = `<@${member.id}>`
 

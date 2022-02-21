@@ -5,7 +5,7 @@ module.exports = (client) => {
     const { member, mentions } = message
 
     const tag = `<@${member.id}>`
-    const report = client.channels.cache.get('853526088473640971')
+    const report = client.channels.cache.get('937602764341661727')
 
     if (
       member.hasPermission('ADMINISTRATOR') ||
